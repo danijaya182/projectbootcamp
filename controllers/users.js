@@ -36,7 +36,10 @@ module.exports = {
         res.json({
             status:"success",
             message:"ok",
-            data:{user: userInfo, token:token}});
+            data:{user: {
+              name: userInfo.name,
+              email :userInfo.email
+            }, token:token}});
         } else {
           res.json({
             status:"error",

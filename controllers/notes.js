@@ -9,7 +9,7 @@ module.exports = {
             res.json({
                 status: "success",
                 message: "ok",
-                date: {
+                data: {
                     note: noteInfo
                 }
             });
@@ -32,8 +32,8 @@ module.exports = {
                 res.json({
                     status: "success",
                     message: "ok",
-                    date: {
-                        note: noteList
+                    data: {
+                        notes: noteList
                     }
                 });
 
